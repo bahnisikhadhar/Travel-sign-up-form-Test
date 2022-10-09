@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up-form(test)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+    <div class="box">
+    <h1>Sign Up</h1>
+    <form>
+     <label for="fname" class="signup">First Name*</label> <br>
+     <input type="text" name="fname" placeholder="First Name" required class="boxes"> <br>
+
+     <label for="lname">Last Name</label> <br>
+     <input type="text" name="lname" placeholder="Last Name" class="boxes"> <br>
+
+     <label for="phone">Phone Number*</label> <br>
+     <input type="text" name="countrycode" value="+91" size="1" style="padding: 5px;border-radius: 20px;">
+     <input type="tel" name="phone" placeholder="1234-567890" required style="padding: 5px;width: 40%; border-radius: 20px; "> <br>
+
+     <label for="email">Email</label> <br>
+     <input type="email" placeholder="Enter email" class="boxes"> <br>
+
+     <label for="passwrd">Password*</label> <br>
+     <input type="password" placeholder="Enter password" minlength="8" required class="boxes"> <br>
+
+     <label for="rpasswrd">Re-type Password</label> <br>
+     <input type="password" placeholder="Re-type password" class="boxes"> <br> <br>
+
+     <label for="choice">Destination You Prefer:</label>
+     <input type="checkbox" name="choice"> Mountain
+        <input type="checkbox" name="choice">Sea-Beaches
+        <input type="checkbox" name="choice"> Jungle <br> <br>
+
+        <label for="trip">Trip preference:</label>
+        <input type="radio" name="trip">Single
+        <input type="radio" name="trip">Family
+        <input type="radio" name="trip">Friends <br> <br>
+
+        <label for="date">Date You Prefer for the Trip:</label>
+        <input type="date" style="width: 30%; padding:5px;border-radius: 20px;"> <br> <br>
+
+        <label for="pics">Share your previous Trip's Pictures:</label>
+        <input type="file" name="pics" accept="image/jpeg, image/png"> <br> <br>
+
+        <label for="explain">Share your Trip's Experience:</label> <br>
+        <textarea name="explain" cols="30" rows="3" placeholder="Please Speak your heart out" class="boxes"></textarea>
+        <br> <br>
+        
+        <input type="submit" class="register">
+     
+
+    </form>
+</div>
+</section>
+    
+</body>
+</html>
