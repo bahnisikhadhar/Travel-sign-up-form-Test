@@ -19,8 +19,8 @@
      <input type="text" name="lname" placeholder="Last Name" class="boxes"> <br>
 
      <label for="phone">Phone Number*</label> <br>
-     <input type="text" name="countrycode" value="+91" size="1" style="padding: 5px;border-radius: 20px;">
-     <input type="tel" name="phone" placeholder="1234-567890" required style="padding: 5px;width: 40%; border-radius: 20px; "> <br>
+     <input type="text" name="countrycode" value="+91" size="1" style="padding: 5px;">
+     <input type="tel" name="phone" placeholder="1234-567890" required style="padding: 5px;width: 40%;"> <br>
 
      <label for="email">Email</label> <br>
      <input type="email" placeholder="Enter email" class="boxes"> <br>
@@ -32,24 +32,31 @@
      <input type="password" placeholder="Re-type password" class="boxes"> <br> <br>
 
      <label for="choice">Destination You Prefer:</label>
-     <input type="checkbox" name="choice"> Mountain
-        <input type="checkbox" name="choice">Sea-Beaches
-        <input type="checkbox" name="choice"> Jungle <br> <br>
-
+     <input type="checkbox" name="choice" id="mountain"> 
+     <label for="mountain">Mountain</label>
+     <input type="checkbox" name="choice" id="sea">
+     <label for="sea">Sea-Beaches</label>
+     <input type="checkbox" name="choice" id="jungle">  
+      <label for="jungle">Jungle</label> <br> <br>
         <label for="trip">Trip preference:</label>
-        <input type="radio" name="trip">Single
-        <input type="radio" name="trip">Family
-        <input type="radio" name="trip">Friends <br> <br>
+        <input type="radio" name="trip" id="single">
+        <label for="single">Single</label> 
+        <input type="radio" name="trip" id="family">
+        <label for="family">Family</label>
+        <input type="radio" name="trip" id="friends">
+        <label for="friends">Friends </label><br> <br>
 
         <label for="date">Date You Prefer for the Trip:</label>
-        <input type="date" style="width: 30%; padding:5px;border-radius: 20px;"> <br> <br>
+        <input type="date" style="width: 30%; padding:5px;"> <br> <br> 
+
+        <label for="explain">Share your Trip's Experience:</label> 
+        <textarea name="explain" rows="3" placeholder="Please Speak your heart out" class="boxes"></textarea>
+        <br> <br>
 
         <label for="pics">Share your previous Trip's Pictures:</label>
         <input type="file" name="pics" accept="image/jpeg, image/png"> <br> <br>
 
-        <label for="explain">Share your Trip's Experience:</label> <br>
-        <textarea name="explain" cols="30" rows="3" placeholder="Please Speak your heart out" class="boxes"></textarea>
-        <br> <br>
+        
         
         <input type="submit" class="register">
      
